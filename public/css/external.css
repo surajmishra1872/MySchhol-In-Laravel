@@ -1,0 +1,390 @@
+body{
+  overflow-x: hidden; 
+}
+/* Scrollbar css start */
+body::-webkit-scrollbar {
+  width: 11px;  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 132, 51) ;   /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+  height:150px;
+}
+/* end of  scrollbar css */
+.top1 .fa {
+  border: 1px solid white;
+  height: 25px;
+  width: 25px;
+  padding-top: .75%;
+  background: white;
+  color: orange;
+  margin-left: 2px;
+}
+
+.top1 .fa:hover {
+  transform: rotate(360deg);
+  transition: all ease 1s;
+  color: white;
+  background-color: #ffc107;
+  border: 1px solid white;
+}
+
+#menu {
+  background-color: transparent;
+}
+
+#menu ul li a:hover {
+  color: red;
+  transition: all ease 1s;
+}
+
+#logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.navbar-brand {
+  padding: 14px 20px;
+  font-size: 16px;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.nav-item {
+  padding: 6px 14px;
+  text-align: center;
+}
+
+.nav-link {
+  padding-bottom: 10px; 
+}
+
+.v-line {
+  background-color: gray;
+  width: 1px;
+  height: 20px;
+}
+
+.navbar-collapse.collapse.in {
+  display: block !important;
+}
+
+@media (max-width: 576px) {
+  .nav-item {
+      width: 100%;
+      text-align: left;
+  }
+
+  .v-line {
+      display: none;
+  }
+}
+.bg-blue{
+  background-color:navy;
+}
+
+/* Login form css */
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #f093fb;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+  }
+  
+  .card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+  }
+  .card-registration .select-arrow {
+  top: 13px;
+  }
+
+a{
+  text-decoration: none;
+}
+
+.form-bg{
+  margin-top: 30px ;
+}
+
+.form-horizontal{
+  background: #fff;
+  padding-bottom: 75px;
+  border-radius: 15px;
+  text-align: center;
+  height:auto;
+  box-shadow: 0px 2px 12px 2px rgb(0, 0, 0);
+}
+.form-horizontal .heading{
+  display: block;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 35px 0;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 30px;
+}
+.form-horizontal .form-group{
+  padding: 0 40px;
+  margin: 0 0 25px 0;
+  position: relative;
+}
+.form-horizontal .form-control{
+  background: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  box-shadow: none;
+  padding: 0 20px 0 45px;
+  height: 40px;
+  transition: all 0.3s ease 0s;
+}
+.form-horizontal .form-control:focus{
+  background: #e0e0e0;
+  box-shadow: none;
+  outline: 0 none;
+}
+.form-horizontal .form-group i{
+  position: absolute;
+  top: 12px;
+  left: 60px;
+  font-size: 17px;
+  color: #c8c8c8;
+  transition : all 0.5s ease 0s;
+}
+.form-horizontal .form-control:focus + i{
+  color: #00b4ef;
+}
+.form-horizontal .fa-question-circle{
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  right: 60px;
+  font-size: 20px;
+  color: #808080;
+  transition: all 0.5s ease 0s;
+}
+.form-horizontal .fa-question-circle:hover{
+  color: #000;
+}
+.form-horizontal .main-checkbox{
+  float: left;
+  width: 20px;
+  height: 20px;
+  background: #11a3fc;
+  border-radius: 50%;
+  position: relative;
+  margin: 5px 0 0 5px;
+  border: 1px solid #11a3fc;
+}
+.form-horizontal .main-checkbox label{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.form-horizontal .main-checkbox label:after{
+  content: "";
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  border: 3px solid #fff;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.form-horizontal .main-checkbox input[type=checkbox]{
+  visibility: hidden;
+}
+.form-horizontal .main-checkbox input[type=checkbox]:checked + label:after{
+  opacity: 1;
+}
+.form-horizontal .text{
+  float: left;
+  margin-left: 7px;
+  line-height: 20px;
+  padding-top: 5px;
+  text-transform: capitalize;
+}
+.form-horizontal .btn{
+  float: right;
+  font-size: 14px;
+  color: #fff;
+  background: #00b4ef;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.5s ease 0s;
+}
+@media only screen and (max-width: 479px){
+  .form-horizontal .form-group{
+      padding: 0 25px;
+  }
+  .form-horizontal .form-group i{
+      left: 45px;
+  }
+  .form-horizontal .btn{
+      padding: 10px 20px;
+  }
+}
+
+/* Image Gallery */
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+
+body {
+  background: #f4f4f4;
+}
+
+.banner {
+  background: #a770ef;
+  background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+}
+
+
+/* sub-gallery css */
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+/* Contact us page */
+
+
+/* About us page */
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+
+/* testnomial */
+#outer
+{
+height:350px;
+background:red;
+color:white;
+font-family:Lucida Calligraphy;
+background:url('http://127.0.0.1:8000/Web/background.jpg');
+background-size:100% 100%;
+background-repeat:no-repeat;
+}
+#inner
+{
+/* height:750px; */
+background:rgba(0, 0, 0,0.5);
+}
+
+
+/* jquery error css */
+label.error {
+  color: #dc3545;
+  font-size: 18px;
+}
+
+/* home page css */
+
+.navbar-brand, .nav-link{
+  color: white;
+  font-weight:450;
+}
+
+#menubar {
+  box-shadow: 0px 2px 2px white;
+}
+
+#myBtn {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 30px;
+z-index: 99;
+font-size: 18px;
+border: none;
+outline: none;
+background-color:red;
+color: white;
+cursor: pointer;
+padding: 15px;
+border-radius: 4px;
+}
+
+#myBtn:hover {
+background-color: rgb(3, 163, 11);
+
+}
+#myBtn i{
+font-size: 20px;
+}
+
+.blink {
+        animation: blinker 2s linear infinite;
+        color: rgb(255, 255, 255);
+        font-family: sans-serif;
+    }
+    @keyframes blinker {
+        50% {
+            opacity:0.2;
+        }
+    }
+/* Review Button */
